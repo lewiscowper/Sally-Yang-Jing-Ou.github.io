@@ -1,0 +1,26 @@
+---
+layout: base
+projects: selected
+title: Projects
+description: A listing of some of Sally OuYang's side projects.
+og_type: article
+---
+
+I do not have a clear idea as to why I am doing it or what I am doing next, but I am having a lot of fun and learning a lot. Here are a few small projects I've done over the summer, I will keep going at it.
+
+<div class="blockylist bigblockylist">
+    <ul>
+        {% for page in site.pages %}
+            {% if page.is_project %}
+                <li class="test">
+                <a href="{{ page.url }}"> 
+                        <img src="{{ page.thumbnail }}" class="project_thumbnail">
+                        <h1>{{ page.title }}</h1>
+                        <div><strong>Languages: </strong>{{ page.languages }}</div>
+                        <div><strong>Summary: </strong>{{ page.summary }}</div>
+                </a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
