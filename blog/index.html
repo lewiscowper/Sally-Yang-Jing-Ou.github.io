@@ -1,0 +1,24 @@
+---
+layout: base
+blog: selected
+title: Blog
+description: The latest blog posts by Sally OuYang
+og_type: blog
+---
+<div style="text-align:center; margin-bottom:1em; font-size:21px;"><b>Latest Posts</b> | <a href="/blog/archive/">Archive</a></div>
+{% for post in site.posts limit:5 %}
+
+<div>
+	<h1 style="margin:0px; text-align: center;"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+ 	<div class="about"> About {{ post.tags | array_to_sentence_string }} </div>
+ 	<div class="faded" style="margin-bottom:5px;">{{ post.date | date_to_string }}</div>
+ 	<div style="margin-top:1.5em">{{ post.content | truncatehtml: 700 }}</div>
+ 	<div style="margin-top:1.5em; text-align:center">
+ 	<a href="{{ post.url }}" style="font-size:18px; letter-spacing:1.4px;">read more</a>
+ 	</div>
+</div>
+
+<hr class="fancyrule" />
+{% endfor %}
+
+<a href="/blog/archive/">← Older posts</a>
