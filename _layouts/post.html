@@ -1,0 +1,17 @@
+---
+layout: base
+blog: selected
+og_type: article
+---
+<a href="/blog/archive/">&laquo; Back to posts</a>
+<h1 style="margin:0px;;">{{ page.title }}</h1>
+<div class="faded" style="font-size:16px; margin-bottom:5px;">{{ page.date | date_to_string }}</div>
+<div style="margin-top:1.5em">
+	<div id="post">
+		{{ content }}
+	</div>
+</div>
+
+{% assign template_type = 'post' %}
+
+{% include disqus.html %}

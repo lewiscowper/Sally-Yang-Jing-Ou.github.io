@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+    <head>
+	{% include standardhead.html %}
+    <!--not common across all pages-->
+    <link rel="stylesheet" type="text/css" href="/css/syntax.css" >
+</head>
+    <body class="main-background2">
+        {% include menu.html %}
+        <div id="content" class="grid grid-16" style="background-color:rgba(255, 255, 255, 0); clear:both;">
+            <div id="content-padding">
+                {{ content }}
+            </div>
+        </div>
+        <div id="footer">&copy; Copyright {{ site.time | date: "%Y" }} Sally OuYang. All Rights Reserved</div>
+    </script>
+    </body>
+</html>

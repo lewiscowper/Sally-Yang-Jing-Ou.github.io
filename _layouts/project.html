@@ -1,0 +1,34 @@
+---
+layout: base
+projects: selected
+lightbox: true
+og_type: article
+---
+<p> <a href="/projects/">&laquo; Back to projects</a></p>
+
+<img class="project_thumbnail" style="float: right;" src="{{ page.thumbnail }}">
+<h1 style="">{{ page.title }}</h1>
+<div><strong>Languages: </strong>{{ page.languages }}</div>
+<div><strong>Summary: </strong>{{ page.summary }}</div>
+
+{% if page.screenshots != nil %}
+<div id="gallery">
+    <div style="font-size:.85em;color:#888;font-style:italic;">{{ page.screenshots | size }} Screenshots</div>
+    <ul>
+        {% for screenshot in page.screenshots %}
+        <li>
+            <a href="{{ screenshot[0] }}" title="{{ screenshot[2] }}">
+                <img src="{{ screenshot[1] }}" width="144" height="144" alt="{{ screenshot[2] }}" />
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+
+<h2>Details</h2>
+<p>{{ content }}</p>
+
+{% assign template_type = 'project' %}
+
+{% include disqus.html %}
