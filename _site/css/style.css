@@ -1,0 +1,342 @@
+/*  override inuit.css 
+*/
+
+a:focus, a:hover {
+    position:static;
+    top: 0px;
+}
+
+a:visited {
+        opacity: 1;
+}
+
+#nav {
+    margin-bottom: 0px;
+}
+
+pre {
+    line-height: 18px;
+}
+
+h1 {
+    margin-bottom: .25em;
+}
+
+ul, ol {
+    margin-bottom: 1em;
+}
+
+th, td {
+    border: none;
+    padding: 0px;
+}
+
+/* end overriding inuit.css - I should trim inuit.css down */
+
+.main-background2 {
+    background: url(/img/gradient-grey.jpg) fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+#content {
+    background-color: #FFF2CF;
+    min-height: 400px;
+}
+
+
+a {
+    color: #279F9D;
+}
+
+a:hover {
+    color: #1D7774;
+    text-decoration: underline;
+}
+
+h1 a {
+    color:#333;
+}
+
+#nav {
+    height:45px; /* 25px height + 2 * 10px padding */
+    background-color:#6B563F;
+}
+
+#nav ul
+{
+    margin:0px;
+}
+
+#nav li
+{
+    display: inline;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+}
+
+#nav a
+{
+    letter-spacing: 2px;
+    display: block;
+    float: left;
+    height:25px;
+    background-color: #6B563F;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    padding: 8px 20px 12px 20px;
+}
+
+#nav a:hover 
+{
+    text-decoration:none;
+    background-color: #A9C78C;
+    color: #000000;
+}
+
+#nav a.selected
+{
+        /*background-color: #FFF2CF;*/
+        background-color: white;
+        color: #000000;
+}
+
+.faded{
+    color:#888888;
+    font-family: Baskerville-Italic, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size:16px;
+    text-align:center;
+}
+
+.indent {
+    padding-left:7px;   
+}
+
+.blockylist h1, .blockylist h2, .blockylist h3, .blockylist h4, .blockylist h5
+{
+    margin: 0px;
+}
+
+.blockylist ul
+{
+    margin: 10px 0px 10px 0px;
+}
+
+.blockylist li
+{
+    list-style-type: none;
+}
+
+.blockylist ul div
+{
+    margin: 0px;
+}
+
+.blockylist img
+{
+    float: left;
+    margin-right: 10px;
+    margin-top: 9px;
+}
+
+.blockylist a
+{
+    text-decoration: none;
+    display: block;
+    color: #333333;
+    padding: 10px;
+}
+
+.blockylist a:hover
+{
+    background-color: #a9c78c;
+    color: #000000
+}
+
+.bigblockylist > ul > li
+{
+    margin-bottom:10px;
+}
+
+.bigblockylist a 
+{
+    min-height: 110px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.bigblockylist h1 {
+    padding-top:4px;
+}
+
+.bigblockylist div {
+    padding-left:120px;
+}
+
+.archiveblockylist > ul > li
+{
+    margin-bottom:10px;
+}
+
+.archiveblockylist a 
+{
+    min-height: 65px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.archiveblockylist a h2
+{
+    padding-top: 8px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", Open sans, sans-serif;
+}
+
+.archiveblockylist a div
+{
+    padding-top:2px;
+}
+
+.compact_list > li
+{
+    padding: 0px;
+    margin: 5px 0px;
+    list-style-type: none;
+}
+
+p { margin-bottom:1em;}
+
+h2, h3, h4, h5 { 
+    margin-bottom:.75em; 
+    margin-top:1.5em; 
+    font-family: "Open Sans","Helvetica Neue",Arial,sans-serif;
+}
+
+td { 
+    background: white; 
+    vertical-align: middle;
+}
+
+td a { display: block;}
+
+.blockylist time {
+    display: block;
+    float: left;
+    padding: 0em .75em 0 0;
+}
+
+.blockylist time span {
+    color: #999999;
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family:Calibri, "Helvetica Neue", Arial, sans-serif; 
+}
+
+.blockylist time span.month {
+    font-size: 1em;
+}
+
+.blockylist time span.day {
+    font-size: 1.6em;
+    line-height: 0.8em;
+}
+
+.blockylist time span.year {
+    font-size: 0.8em;
+}
+
+.blockylist a:hover time span, .blockylist a:hover .faded {
+    color: #333;
+}
+
+#blurb {
+    font-size:1.25em; 
+    line-height: 1.2;
+    margin-top: 1em;
+    margin-bottom:1em;
+}
+
+#related {
+    margin-top:30px;
+}
+
+#post {
+    margin-bottom: 20px;
+}
+
+hr.fancyrule {
+    border: none;
+    height: 2px;
+    background-color: #cccccc;
+    color: #cccccc;
+    margin: 60px 0px 20px;
+}
+
+/* jQuery lightBox plugin - Gallery style*/
+#gallery {
+        padding: 5px;
+        margin-bottom: 10px;
+        height:150px;
+        overflow:hidden;
+}
+#gallery ul { list-style: none; margin: 0px; }
+#gallery ul li { display: inline; }
+#gallery ul img {
+        margin: 10px;
+        width: 144px;
+}
+#gallery ul a:hover img {
+        margin:0px;
+        width:164px;
+}
+
+#footer {
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(156,53,53);
+    clear: both;
+}
+
+.project_thumbnail {
+    width: 90px;
+    height:90px;
+    border: 1px solid black;
+    -moz-box-shadow: 0px 0px 10px 0px #888;
+    -webkit-box-shadow: 0px 0px 10px 0px #888;
+    box-shadow: 0px 0px 10px 0px #888;
+}
+
+pre {
+    background-color: #EEEEEE;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 1em;
+}
+
+code {
+    font-size:12px;
+    font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+    background-color: #EEEEEE;
+    padding: 4px;
+}
+
+pre code {
+    padding: 0;   
+}
+
+.interjection {
+    font-size: 88%;
+}
+
+.super {
+    vertical-align: super;
+    font-size:75%;
+    font-family:sans-serif;
+}

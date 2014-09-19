@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://www.sallysally.ca/404.html</loc>
+        <lastmod>2014-09-08T16:04:00-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.sallysally.ca/blog/archive/blog/archive/</loc>
+        <lastmod>2014-09-08T16:04:00-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.sallysally.ca/blog/blog/</loc>
+        <lastmod>2014-09-08T16:04:00-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.sallysally.ca/</loc>
+        <lastmod>2014-09-11T17:03:18-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.sallysally.ca/projects/projects/</loc>
+        <lastmod>2014-09-08T16:04:00-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.sallysally.ca/projects/Spinning-table/projects/Spinning-table/</loc>
+        <lastmod>2014-09-19T09:40:32-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.sallysally.ca/projects/Flappy-mario/projects/Flappy-mario/</loc>
+        <lastmod>2014-09-18T23:56:44-04:00</lastmod>
+    </url>
+</urlset>
