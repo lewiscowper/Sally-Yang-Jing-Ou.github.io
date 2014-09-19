@@ -38,6 +38,16 @@ td[colspan]{text-align:center}
 tfoot{text-align:center}
 .accessibility{position:absolute;left:-99999px}
 
+ul, menu, dir{
+display: block;
+list-style-type: disc;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 40px;
+}
+
 h1,h2,h3,h4,h5,h6{
 	font-size:100%;
 	font-weight:normal
