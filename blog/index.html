@@ -1,24 +1,132 @@
----
-layout: base
-blog: selected
-title: Blog
-description: The latest blog posts by Sally OuYang
-og_type: blog
----
-<div style="text-align:center; margin-bottom:1em; font-size:21px;"><b>Latest Posts</b> | <a href="/blog/archive/">Archive</a></div>
-{% for post in site.posts limit:5 %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+    <head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="description" content="The latest blog posts by Sally OuYang">
+<meta property="og:title" content="Blog" >
+<meta property="og:type" content="blog" >
+<meta property="og:url" content="http://www.sallysally.ca/blog/index.html">
+<meta property="og:site_name" content="Sally Sally dot ca">
+<meta property="og:description" content="The latest blog posts by Sally OuYang">
+<link rel="stylesheet" type="text/css" href="/css/site.css" >
+<title>Blog - Sally OuYang</title>
+<!-- image at the tab -->
+<link rel="shortcut icon" href="/favicon.ico" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    if (typeof jQuery == 'undefined')
+    {
+        document.write(decodeURIComponent("%3Cscript src='/js/jquery-1.6.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+</script>
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-53732600-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+    <!--not common across all pages-->
+    <link rel="stylesheet" type="text/css" href="/css/syntax.css" >
+</head>
+    <body class="main-background2">
+        <div id="nav">
+	<ul>
+    	<li><a class=" nav-link" href="/">About</a></li>
+   		<li><a class=" nav-link" href="/projects/">Projects</a></li>
+    	<li><a class="selected nav-link" href="/blog/">Blog</a></li>
+    	<li><a class="nav-link" href="http://photos.sallysally.ca">Photos</a></li>
+    	<li><a class="nav-link" href="/files/resume.pdf">Résumé</a></li>
+    	<li><a class="nav-link" href="https://github.com/Sally-Yang-Jing-Ou">GitHub</a></li>
+    	<li><a class="nav-link" href="https://www.linkedin.com/in/sallyouyang">LinkedIn</a></li>
+    </ul>
+</div>
+
+        <div id="content" class="grid grid-16" style="background-color:rgba(255, 255, 255, 0); clear:both;">
+            <div id="content-padding">
+                <div style="text-align:center; margin-bottom:1em; font-size:21px;"><b>Latest Posts</b> | <a href="/blog/archive/">Archive</a></div>
+
 
 <div>
-	<h1 style="margin:0px; text-align: center;"><a href="{{ post.url }}">{{ post.title }}</a></h1>
- 	<div class="about"> About {{ post.tags | array_to_sentence_string }} </div>
- 	<div class="faded" style="margin-bottom:5px;">{{ post.date | date_to_string }}</div>
- 	<div style="margin-top:1.5em">{{ post.content | truncatehtml: 700 }}</div>
+	<h1 style="margin:0px; text-align: center;"><a href="/blog/2014/09/26/yesterday-you-said-tomorrow/">Yesterday You Said Tomorrow</a></h1>
+ 	<div class="about"> About Motivation </div>
+ 	<div class="faded" style="margin-bottom:5px;">26 Sep 2014</div>
+ 	<div style="margin-top:1.5em"><html><body>
+<p>“<a href="http://livewholebefree.com/wordpress/wp-content/uploads/2012/10/yesterday-tomorrow-nike.jpg">Yesterday you said tomorrow</a>
+”, I came across this picture a few months ago when I was browsing the internet. It’s simply an ad slogan from Nike, but it has definitely become the quote that has the most impact on me thus far.</p>
+
+<p>This quote can be interpreted as “do not procrastinate”, or “finish your work today, do not leave it to tomorrow”, but to me, these interpretations aren’t as powerful as just saying “yesterday you said tomorrow”. Why? By saying “yesterday you said tomorrow”, you’ve made some sort of promise to yourself that you’d do something today, promises to your own self are so important that not completing them feels like a betrayal.</p>
+
+<p>The number of times I promised myself that I would do something tomorrow is immeasurable. It seems like I’ve always put off the work that I do not want to do at the moment, and say “It’s okay, I’d finish it by tomorrow”. But the pro...</p>
+</body></html></div>
  	<div style="margin-top:1.5em; text-align:center">
- 	<a href="{{ post.url }}" style="font-size:18px; letter-spacing:1.4px;">read more</a>
+ 	<a href="/blog/2014/09/26/yesterday-you-said-tomorrow/" style="font-size:18px; letter-spacing:1.4px;">read more</a>
  	</div>
 </div>
 
 <hr class="fancyrule" />
-{% endfor %}
+
+
+<div>
+	<h1 style="margin:0px; text-align: center;"><a href="/blog/2014/08/26/focus-on-what-you-have/">Focus on What You Have</a></h1>
+ 	<div class="about"> About Life </div>
+ 	<div class="faded" style="margin-bottom:5px;">26 Aug 2014</div>
+ 	<div style="margin-top:1.5em"><html><body>
+<p>It was the first semester of grade 12, around winter 2012, an accident happened to me.
+<br>Something went terribly wrong.</p>
+
+<p>I was in class when I felt a sharp pain in my left ear, as if someone used a needle to stab it. My ears started ringing, I started to get a headache and everything seemed to be spinning around me. Things did not get better from here.</p>
+
+<p>My steps became unsteady, I had to consciously control mys...</p>
+</body></html></div>
+ 	<div style="margin-top:1.5em; text-align:center">
+ 	<a href="/blog/2014/08/26/focus-on-what-you-have/" style="font-size:18px; letter-spacing:1.4px;">read more</a>
+ 	</div>
+</div>
+
+<hr class="fancyrule" />
+
+
+<div>
+	<h1 style="margin:0px; text-align: center;"><a href="/blog/2014/07/14/first-post/">First Post</a></h1>
+ 	<div class="about"> About Motivation </div>
+ 	<div class="faded" style="margin-bottom:5px;">14 Jul 2014</div>
+ 	<div style="margin-top:1.5em"><html><body>
+<p>Hi, can you see this?</p>
+
+<p>Oh, hi there! Thanks for coming by.
+If you can see this post now, that probably means my website is finally working... and I am finally willing to show it to the world. Not sure how long it'd take me to finish it up, but I'll keep going at it! :)</p>
+
+<p>Here are a few credits to those who helped me accomplish this:
+</p>
+<li>Thanks to <a href="http://www.laivictor.com/">Victor Lai</a> for helping me with the technical stuff and giving me motivation! </li>
+<li>Thanks to <a href="http://blog.azuresky.ca/">Michael Chang</a> for buying (stealing) my domain name! :P </li>
+<li>Thanks to <a href="https://www.linkedin.com/pub/ruoyu-wang/88/767/b41">Roy Wang</a> for taking 99.9% of the pictures you see on this website! </li>
+
+<p>And of course, thanks to G...</p>
+</body></html></div>
+ 	<div style="margin-top:1.5em; text-align:center">
+ 	<a href="/blog/2014/07/14/first-post/" style="font-size:18px; letter-spacing:1.4px;">read more</a>
+ 	</div>
+</div>
+
+<hr class="fancyrule" />
+
 
 <a href="/blog/archive/">← Older posts</a>
+
+            </div>
+        </div>
+        <div id="footer">&copy; Copyright 2014 Sally OuYang. All Rights Reserved</div>
+    </script>
+    </body>
+</html>
